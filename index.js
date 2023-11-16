@@ -1,5 +1,5 @@
 const express = require("express") //Essa é a variável
-const uuid = require('uuid') // criar uma biblioteca
+const uuid = require('uuid') // criar uma bibliotec
 
 const port = 3000
 const app = express()
