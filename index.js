@@ -1,9 +1,12 @@
-const express = require("express") //Essa é a variável
-const uuid = require('uuid') // criar uma bibliotec
+import express from 'express'; //Essa é a variável
+import { v4 } from 'uuid'; // criar uma bibliotec
+const cors = require('cors');
+app.use(cors());
 
-const port = 3000
-const app = express()
-app.use(express.json())
+const port = 3001;
+const app = express();
+app.use(express.json());
+app.use(cors())
 
 /*- Query params => meusite.com/users?name=tiago&age=38 // FILTROS
 - Route params => /users/2  // BUSCAR, DELETAR OU ATUALIZAR ALGO ESPECÍFICO
