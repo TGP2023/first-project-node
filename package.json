@@ -1,6 +1,6 @@
 {
-  "name": "first-project-node",
-  "type":"module",
+  "name": "first-project-node",  
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

@@ -1,7 +1,8 @@
 import express from 'express'; //Essa é a variável
 import { v4 } from 'uuid'; // criar uma bibliotec
-const cors = require('cors');
-app.use(cors());
+import cors from 'cors'
+//const cors = require('cors');
+
 
 const port = 3001;
 const app = express();
@@ -123,7 +124,7 @@ app.get('/users', (request, response) => { //rota para mostrar usuários
 app.post('/users', (request, response) => { //rota para chegar informações
     const { name, age } = request.body
 
-    const user = { id: uuid.v4(), name, age } // depois de instalar (uuid), ela gera um id universal único, olhando a documentação no site uuid
+    const user = { id:v4(), name, age } // depois de instalar (uuid), ela gera um id universal único, olhando a documentação no site uuid
 
     users.push(user) // Este é um array, para adicionar a informação dos usuários 
 
